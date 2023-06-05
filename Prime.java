@@ -6,20 +6,26 @@ public class Prime
 	  Scanner s=new Scanner(System.in);
 	  System.out.println("Enter the Number: ");
 	  int num=s.nextInt();
-	  int i=2;
 	  int count=0;
-	  while(i<num)
-	  {
+	if(num==0 || num==1)
+        {
+           System.out.println(num+" It's not a prime number");
+        }
+      else
+        {
+          for(int i=2;i<num;i++)
+           {
 	      if(num%i==0)
 	         count++;
-	         break;
-	  }
-	  if(count==0)
-	 {
-	     System.out.println("It's a prime number");
-	 }
-	 else{
-	     System.out.println("It's a not prime number");
-	 }
+           } 
+	   if(count==0)
+	     {
+	       System.out.println(num+" It's a prime number");
+	     }
+           else
+             {
+	       System.out.println(num+" It's a not prime number");
+	     }
+        }
 }
 }
