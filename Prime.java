@@ -27,5 +27,5 @@ public class Prime
 	       System.out.println(num+" It's a not prime number");
 	     }
         }
-}
+    }
 }
